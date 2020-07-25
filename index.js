@@ -1,8 +1,14 @@
-const os = require('os');
+const fs = require('fs');
 
+// PAra crear un nuevo archivo
+// Parametros: nombre del archivo creado, contenido del archivo, un callback que nos permite conocer el estado de la creación del archivo
+fs.writeFile('./texto.txt', 'Línea uno', function(err) {
 
+    if (err) {
+        console.log(err)
+    }
 
-console.log(os.platform());
-console.log(os.release());
-console.log(`free mem: ${os.freemem} bytes`);
-console.log(`total mem: ${os.totalmem} bytes`);
+    console.log('Archivo creado');
+});
+
+console.log('Última línea de código');
