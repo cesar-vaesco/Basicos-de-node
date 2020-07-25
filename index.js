@@ -1,14 +1,18 @@
 const fs = require('fs');
 
-// PAra crear un nuevo archivo
-// Parametros: nombre del archivo creado, contenido del archivo, un callback que nos permite conocer el estado de la creación del archivo
-fs.writeFile('./texto.txt', 'Línea uno', function(err) {
 
+// fs.readFile('./texto.txt', function(err, data) {
+//     if (err) {
+//         console.log(err)
+//     }
+
+//     console.log(data)
+// });
+
+fs.readFile('./texto.txt', (err, data) => {
     if (err) {
         console.log(err)
     }
 
-    console.log('Archivo creado');
-});
-
-console.log('Última línea de código');
+    console.log(data.toString());
+})
