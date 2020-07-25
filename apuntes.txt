@@ -1,0 +1,4 @@
+Ejecutar node en el terminal:
+                      En el directorio de nuestra carpeta que compone el proyecto se ejecuta el comando
+                              node nombre-archivo.extención
+                                      ejemplo: node hola-mundo
