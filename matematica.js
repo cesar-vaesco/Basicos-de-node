@@ -1,4 +1,4 @@
-//Cramos un objeto
+//Creamos un objeto
 
 const sum = function sumar(n1, n2) {
     return n1 + n2;
@@ -38,7 +38,7 @@ const despedida = (nombre) => {
     console.log(`Adios ${nombre}`);
 }
 
-//Importamos el objeto
+// Importamos el objeto
 module.exports = {
     saludo,
     sum,
