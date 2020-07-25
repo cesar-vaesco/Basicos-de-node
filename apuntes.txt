@@ -2,3 +2,15 @@ Ejecutar node en el terminal:
                       En el directorio de nuestra carpeta que compone el proyecto se ejecuta el comando
                               node nombre-archivo.extención
                                       ejemplo: node hola-mundo
+
+Los módulos permiten subdividir nuestra aplicación en multiples partes para poder mantenerla por separado
+
+Los módulos se importan como objeto ejemplo:
+{
+  sumar: [Function: sumar],
+  restar: [Function: restar],
+  multiplicar: [Function: multiplicar],
+  dividir: [Function: dividir]
+}
+
+module.exports puede exportar objetos, funciones
