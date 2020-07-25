@@ -14,3 +14,8 @@ Los módulos se importan como objeto ejemplo:
 }
 
 module.exports puede exportar objetos, funciones
+
+
+Módulos core
+
+Los módulos del core de NodeJS no necesitan ser instalados. Estos modulos proveen funcionalidad low-level y métodos de ayuda. Permiten trabajar con el sistema de archivos, la red, datos binarios, streams, desahogar procesos externos, analizar query string, paths, archivos y direcciones URL, asi como realizar otro tipo de tareas como crear clientes y servidores HTTP(s).

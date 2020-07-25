@@ -1,13 +1,8 @@
-const { saludo, sum, res, multi, div, despedida } = require('./matematica');
+const os = require('os');
 
 
 
-console.log(saludo('César'));
-
-console.log('El resultado de la suma es: ', sum(1, 2));
-console.log(res(1, 2));
-console.log(multi(1, 2));
-console.log(div(1, 0));
-console.log(div(1, 5));
-
-console.log(despedida('César'));
+console.log(os.platform());
+console.log(os.release());
+console.log(`free mem: ${os.freemem} bytes`);
+console.log(`total mem: ${os.totalmem} bytes`);
