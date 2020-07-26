@@ -30,3 +30,12 @@ Para levantar el servidor con conmando configurando el archivo package.json:
        "scripts": {
         "start": "node index.js"
     }
+
+Para ejecutar scripts que node no reconoce:
+
+
+"scripts": {
+        "desarrollo": "node index.js"
+    }
+
+                Se ejecuta el comado npm run desarrollo
