@@ -23,3 +23,10 @@ Los módulos del core de NodeJS no necesitan ser instalados. Estos modulos prove
 
 El código asincrono es la distinción de nodeJs
       asíncrono se refiere a la ejecución de procesos ejecutandose de manera simultanea
+
+
+
+Para levantar el servidor con conmando configurando el archivo package.json:
+       "scripts": {
+        "start": "node index.js"
+    }
