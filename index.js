@@ -1,18 +1,8 @@
-const fs = require('fs');
+const http = require('http');
 
+http.createServer((req, res) => {
 
-// fs.readFile('./texto.txt', function(err, data) {
-//     if (err) {
-//         console.log(err)
-//     }
-
-//     console.log(data)
-// });
-
-fs.readFile('./texto.txt', (err, data) => {
-    if (err) {
-        console.log(err)
-    }
-
-    console.log(data.toString());
-})
+    res.writeHead(200, { 'Content-Type': 'text/html' });
+    res.write('<h1>Hola mundo desde Nodejs - Cesar </h1>');
+    res.end();
+}).listen(3000);
